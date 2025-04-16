@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Extraction d'images PDF</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input[type="file"], input[type="submit"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Extraction d'Images depuis un PDF</h1>
+  <div class="container">
+    <form action="/upload_pdf" method="post" enctype="multipart/form-data">
+      <label for="pdf">Choisir un fichier PDF :</label><br/>
+      <input type="file" name="pdf" id="pdf" accept=".pdf" required /><br/>
+      <input type="submit" value="Extraire les images" />
+    </form>
+  </div>
+</body>
+</html>
